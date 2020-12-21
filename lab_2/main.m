@@ -35,12 +35,12 @@ subplot(2, 1, 1);
 plot(sizes, time_wins_rcm, '-or', sizes, time_wins_amd, '-og');
 legend(rcm_algo, amd_algo);
 xlabel('n');
-ylabel('time\_win(n)');
+ylabel('w_{t}');
 
 subplot(2, 1, 2);
 plot(sizes, nz_wins_rcm, '-or', sizes, nz_wins_amd, '-og');
 legend(rcm_algo, amd_algo);
 xlabel('n');
-ylabel('nz\_win(n)');
+ylabel('w_{nz}');
 
 saveas(fig, 'win.png');
